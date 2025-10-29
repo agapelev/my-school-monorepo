@@ -4,10 +4,12 @@
   "description": "Monorepo for Mission Shekinah & School of Christ Kazakhstan",
   "private": true,
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "lint": "turbo lint",
-    "test": "turbo test"
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "format": "turbo run format"
   },
   "keywords": [
     "astro",
@@ -15,8 +17,7 @@
     "monorepo",
     "turbo",
     "pnpm",
-    "mission",
-    "school"
+    "mission"
   ],
   "author": "Lev Nikolaevich",
   "license": "ISC",
