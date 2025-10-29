@@ -1,0 +1,8 @@
+[build]
+  base = "apps/mission-main"
+  command = "pnpm install && pnpm run build"
+  publish = "apps/mission-main/dist"
+
+[functions]
+  directory = "apps/mission-main/.netlify/functions-internal"
+
