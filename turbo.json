@@ -1,26 +1,31 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [
-    "**/.env.*"
-  ],
-  "pipeline": {
+  "globalDependencies": ["**/.env.*"],
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": [
-        "dist/**",   // Astro и Starlight
-        ".next/**", // Next.js
-        "out/**"    // Next.js static export (если используешь)
+        "dist/**",
+        ".next/**",
+        "out/**"
       ]
-    },
-    "lint": {
-      "outputs": []
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
+    "lint": {
+      "outputs": []
+    },
     "test": {
       "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "format": {
       "outputs": []
     }
   }
