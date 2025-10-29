@@ -1,9 +1,9 @@
-# === Общие настройки ===
+# Общая среда
 [build.environment]
   NODE_VERSION = "20"
   PNPM_VERSION = "8.15.0"
 
-# === Mission Main (Astro + Netlify adapter) ===
+# ===== Mission Main (Astro + Netlify adapter) =====
 [context."mission-main".build]
   base = "apps/mission-main"
   command = "pnpm install && pnpm run build"
@@ -12,29 +12,32 @@
 [context."mission-main".functions]
   directory = "apps/mission-main/.netlify/functions-internal"
 
-# === Blog (Astro или Next.js, уточни) ===
+# ===== Blog (Astro, Tailwind v3 пока) =====
 [context."blog".build]
   base = "apps/blog"
   command = "pnpm install && pnpm run build"
   publish = "apps/blog/dist"
 
-[context."blog".functions]
-  directory = "apps/blog/.netlify/functions-internal"
+# Если блог будет с SSR/adapter — добавим functions позже
+# [context."blog".functions]
+#   directory = "apps/blog/.netlify/functions-internal"
 
-# === School Docs (Astro) ===
+# ===== School Docs (Astro, Tailwind v3 пока) =====
 [context."school-docs".build]
   base = "apps/school-docs"
   command = "pnpm install && pnpm run build"
   publish = "apps/school-docs/dist"
 
-[context."school-docs".functions]
-  directory = "apps/school-docs/.netlify/functions-internal"
+# Если docs будет с SSR/adapter — добавим functions позже
+# [context."school-docs".functions]
+#   directory = "apps/school-docs/.netlify/functions-internal"
 
-# === API Server (Next.js + Netlify Starter Platform) ===
+# ===== API Server (Next.js + Netlify Starter Platform) =====
 [context."api-server".build]
   base = "apps/api-server"
   command = "pnpm install && pnpm run build"
   publish = "apps/api-server/.next"
 
+# Для Next.js на Netlify функции формируются адаптером
 [context."api-server".functions]
   directory = "apps/api-server/.netlify/functions-internal"

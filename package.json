@@ -31,5 +31,8 @@
     "node": ">=20.19.5",
     "pnpm": ">=8.15.0"
   },
-  "packageManager": "pnpm@8.15.0"
+  "packageManager": "pnpm@8.15.0",
+  "overrides": {
+    "tailwindcss": "latest"
+  }
 }
