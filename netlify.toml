@@ -1,8 +1,40 @@
-[build]
+# === Общие настройки ===
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "8.15.0"
+
+# === Mission Main (Astro + Netlify adapter) ===
+[context."mission-main".build]
   base = "apps/mission-main"
   command = "pnpm install && pnpm run build"
   publish = "apps/mission-main/dist"
 
-[functions]
+[context."mission-main".functions]
   directory = "apps/mission-main/.netlify/functions-internal"
 
+# === Blog (Astro или Next.js, уточни) ===
+[context."blog".build]
+  base = "apps/blog"
+  command = "pnpm install && pnpm run build"
+  publish = "apps/blog/dist"
+
+[context."blog".functions]
+  directory = "apps/blog/.netlify/functions-internal"
+
+# === School Docs (Astro) ===
+[context."school-docs".build]
+  base = "apps/school-docs"
+  command = "pnpm install && pnpm run build"
+  publish = "apps/school-docs/dist"
+
+[context."school-docs".functions]
+  directory = "apps/school-docs/.netlify/functions-internal"
+
+# === API Server (Next.js + Netlify Starter Platform) ===
+[context."api-server".build]
+  base = "apps/api-server"
+  command = "pnpm install && pnpm run build"
+  publish = "apps/api-server/.next"
+
+[context."api-server".functions]
+  directory = "apps/api-server/.netlify/functions-internal"
