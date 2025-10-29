@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.astro": "astro",
+    "*.mdx": "mdx"
+  },
+  "tailwindCSS.includeLanguages": {
+    "astro": "html",
+    "svelte": "html",
+    "plaintext": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "prettier.disableLanguages": ["vue"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "astro"],
+  "markdownlint.config": {
+    "default": true
+  },
+  "markdown-preview-enhanced.openPreviewInNewEditor": true
+}

@@ -1,0 +1,6 @@
+:root {
+  --sl-color-accent: var(--sl-color-accent-dark);
+  --sl-color-text: var(--sl-color-white);
+  --sl-color-bg: var(--sl-color-gray-9);
+  --sl-color-bg-nav: var(--sl-color-gray-8);
+}

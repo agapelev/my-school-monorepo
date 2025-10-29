@@ -1,4 +1,21 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
-  "unwantedRecommendations": []
+  "recommendations": [
+    "imgildev.vscode-astro-generator",
+    "foxundermoon.next-js",
+    "nextjs.vscode-nextjs-extension",
+    "christian-kohler.path-intellisense",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "DavidAnson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "mdx-js.vscode-mdx",
+    "shd101wyy.markdown-preview-enhanced",
+    "frenco.vscode-vercel",
+    "shailen.netlify",
+    "ivanarjona.cloudflaretunnel",
+    "alessandrobenassi.cloudflare-devtools",
+    "cloudflare.cloudflare-workers-bindings-extension",
+    "eamodio.gitlens"
+  ]
 }
