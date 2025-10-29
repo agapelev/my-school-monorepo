@@ -1,0 +1,22 @@
+
+> astro-netlify-platform-starter@0.1.0 dev /home/lev/my-school-monorepo/apps/mission-main
+> astro dev
+
+[2m03:17:51[22m [34m[@astrojs/netlify][39m Enabling sessions with Netlify Blobs
+[2m03:17:51[22m [34m[vite][39m Environment loaded
+[2m03:17:51[22m [34m[vite][39m Middleware loaded. Emulating features: blobs, edgeFunctions, environmentVariables, functions, geolocation, headers, images, redirects, static.
+[2m03:17:51[22m [34m[vite][39m 💭 Linking this project to a Netlify site lets you deploy your site, use any environment variables defined on your team and site and much more. Run [96mnpx netlify init[39m to get started.
+[2m03:17:51[22m [34m[types][39m Generated [2m1ms[22m
+[2m03:17:52[22m [34m[content][39m Syncing content
+[2m03:17:52[22m [34m[content][39m Synced content
+[2m03:17:52[22m [34m[vite][39m Port 4321 is in use, trying another one...
+[2m03:17:52[22m [34m[vite][39m Port 4322 is in use, trying another one...
+
+[42m[1m astro [22m[49m [32mv5.15.2[39m [2mready in[22m 48862 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://localhost:4323/[39m
+[2m┃[22m Network  [2muse --host to expose[22m
+
+[2m03:17:52[22m [32mwatching for file changes...[39m
+[2m03:19:46[22m [34m[200][39m / [2m127ms[22m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed.[39m

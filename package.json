@@ -1,0 +1,31 @@
+{
+  "name": "my-school-monorepo-root",
+  "version": "1.0.0",
+  "description": "Monorepo for Mission Shekinah & School of Christ Kazakhstan",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "turbo test"
+  },
+  "keywords": [
+    "astro",
+    "nextjs",
+    "monorepo",
+    "turbo",
+    "pnpm",
+    "mission",
+    "school"
+  ],
+  "author": "Lev Nikolaevich",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  },
+  "engines": {
+    "node": ">=20.19.5",
+    "pnpm": ">=8.15.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

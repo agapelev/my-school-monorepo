@@ -1,0 +1,16 @@
+packages:
+  # Основные приложения (Astro, Next.js и т.д.)
+  - apps/*
+
+  # Общие пакеты/библиотеки (если появятся)
+  - packages/*
+
+# Игнорируем тяжёлые бинарные зависимости, которые Netlify и так подтянет
+ignoredBuiltDependencies:
+  - esbuild
+  - sharp
+
+# Опционально: можно добавить настройку для кэша Netlify
+# чтобы ускорить сборки и не пересобирать всё подряд
+neverBuiltDependencies:
+  - fsevents

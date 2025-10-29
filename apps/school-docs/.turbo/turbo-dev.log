@@ -1,0 +1,18 @@
+
+> school-docs@0.0.1 dev /home/lev/my-school-monorepo/apps/school-docs
+> astro dev
+
+[2m03:17:29[22m [34m[types][39m Generated [2m1ms[22m
+[2m03:17:32[22m [34m[content][39m Syncing content
+[2m03:17:32[22m [34m[content][39m Synced content
+[2m03:17:32[22m [34m[vite][39m Re-optimizing dependencies because lockfile has changed
+[2m03:17:32[22m [34m[vite][39m Port 4321 is in use, trying another one...
+
+[42m[1m astro [22m[49m [32mv5.15.2[39m [2mready in[22m 29410 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://localhost:4322/[39m
+[2m┃[22m Network  [2muse --host to expose[22m
+
+[2m03:17:32[22m [32mwatching for file changes...[39m
+[2m03:18:55[22m [34m[200][39m / [2m2293ms[22m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed.[39m
