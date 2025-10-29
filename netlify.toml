@@ -18,26 +18,17 @@
   command = "pnpm install && pnpm run build"
   publish = "apps/blog/dist"
 
-# Если блог будет с SSR/adapter — добавим functions позже
-# [context."blog".functions]
-#   directory = "apps/blog/.netlify/functions-internal"
-
 # ===== School Docs (Astro, Tailwind v3 пока) =====
 [context."school-docs".build]
   base = "apps/school-docs"
   command = "pnpm install && pnpm run build"
   publish = "apps/school-docs/dist"
 
-# Если docs будет с SSR/adapter — добавим functions позже
-# [context."school-docs".functions]
-#   directory = "apps/school-docs/.netlify/functions-internal"
-
-# ===== API Server (Next.js + Netlify Starter Platform) =====
+# ===== API Server (Next.js) =====
 [context."api-server".build]
   base = "apps/api-server"
   command = "pnpm install && pnpm run build"
-  publish = "apps/api-server/.next"
+  # ВАЖНО: publish не указываем, плагин сам всё сделает
 
-# Для Next.js на Netlify функции формируются адаптером
-[context."api-server".functions]
-  directory = "apps/api-server/.netlify/functions-internal"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
